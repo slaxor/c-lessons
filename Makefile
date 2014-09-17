@@ -6,9 +6,9 @@ BINDIR = $(PREFIX)/bin
 DEBUG = true
 
 CC = gcc
-CFLAGS   = -fPIC -O3 -w -pipe $(ARCH_FLAG)
+CFLAGS   = -fPIC -O3 -w -pipe -Wall -std=c11
 ifdef DEBUG
-	CFLAGS += -ggdb -Ddebug
+	CFLAGS += -ggdb -Ddebug -pg
 endif
 INCFLAGS = -I.
 LDFLAGS =

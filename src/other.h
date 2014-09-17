@@ -1,11 +1,10 @@
-struct point {
+typedef struct {
 	char *name;
 	double x;
 	double y;
 	double z;
 	double t;
-};
+} point;
 
-extern struct point other(char *msg);
-
+extern point other(char *msg);
 
